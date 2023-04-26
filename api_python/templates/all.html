@@ -1,0 +1,13 @@
+
+{% block content %}
+    <h1>Liste de nos albums</h1>
+    {% for cd in cds %}
+    <fieldset>
+        <legend></legend>
+    <p>Titre : {{cd['title']}}</p>
+    <p>Artiste :  <a href="http://127.0.0.1:5000/api/v1/ressources/cds/author/{{cd.author}}">{{cd['author']}}</a></p>
+    <p>Année de sortie : {{cd['year_published']}}</p>
+    </fieldset> 
+    {% endfor %}
+    <button><a href="http://127.0.0.1:5000/">retour</a></button>
+{% endblock %}

@@ -1,0 +1,18 @@
+<div id="body" class="container px-4 px-lg-5 mt-5">
+  <div *ngIf="cd">
+    <h2 class="d-flex justify-content-center">modifier le CD de {{ cd.artist }} </h2>
+    <div class="d-flex justify-content-center mb-4"><span>Id : </span>{{cd.id}}</div>
+    <div class="d-flex justify-content-evenly mb-4">
+      <label for="artist"> artiste/groupe : </label>
+      <input id="artist" [(ngModel)]="cd.artist" placeholder="artist">
+      <label for="album_name"> album : </label>
+      <input id="album_name" [(ngModel)]="cd.album_name" placeholder="albume name">
+      <label for="year_published"> année de sortie : </label>
+      <input id="year_published" [(ngModel)]="cd.year_published" placeholder="year_published">
+    </div>
+    <div class="d-flex justify-content-evenly">
+      <button class="btn btn-outline-dark mt-auto" type="button" (click)="save()">save</button>
+      <button class="btn btn-outline-dark mt-auto" type="button" (click)="goBack()">go back</button>
+    </div>
+  </div>
+</div>

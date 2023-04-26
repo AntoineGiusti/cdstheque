@@ -1,0 +1,30 @@
+//variables
+$color-orange : #ff7900;
+$title-font-family : Arial, Helvetica, 75, bold, sans-serif ;
+$text-font-family : Arial, Helvetica, 55, sans-serif ;
+
+
+
+label{
+  font-family: $text-font-family;
+  color: #000;
+}
+
+input{
+  font-family: $text-font-family;
+  border:solid, #000, 2px;
+  border-radius: 0%;
+}
+
+button{
+  background: $color-orange;
+  font-family: $text-font-family;
+  font-size: 17px;
+  border: solid, #000, 2px;
+  border-radius: 0%;
+  margin-bottom: 25px;
+}
+
+button:hover{
+  background: #000;
+  }

@@ -1,0 +1,50 @@
+//variables
+$color-orange : #ff7900;
+$title-font-family : Arial, Helvetica, 75, bold, sans-serif ;
+$text-font-family : Arial, Helvetica, 55, sans-serif ;
+
+
+label {
+  display: block;
+  font-family: $title-font-family;
+  color: #000;
+  font-size: 1.2rem;
+  margin-right: 15px;
+}
+input {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  font-family: $text-font-family;
+}
+
+input:focus {
+  outline: #336699 auto 1px;
+}
+
+li {
+  list-style-type: none;
+}
+.search-result li a {
+  font-family: $text-font-family;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  display: inline-block;
+  width: 100%;
+  max-width: 1600px;
+  padding: .5rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+
+.search-result li a:hover {
+  background-color: #435A60;
+  color: white;
+}
+
+ul.search-result {
+  margin-top: 0;
+  padding-left: 0;
+}

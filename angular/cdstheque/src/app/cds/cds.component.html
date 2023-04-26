@@ -1,0 +1,42 @@
+<section class="py-5 bg-black">
+  <div class="container px-4 px-lg-5 mt-5 ">
+    <h3 class="text-white mb-4">liste de CD's</h3>
+    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 cds">
+      <div *ngFor="let cd of cds">
+        <div class="col mb-5">
+          <div id="card" class="card">
+            <a routerLink="/detail/{{cd.id}}">
+              <h5 id="artist" class="card-body p-4 text-center"><span class="name"></span> {{ cd.artist }}
+              </h5>
+            </a>
+            <div id="details" class="text-center mb-2">
+              <span class="name"></span> {{ cd.album_name }} <br><br>
+              <span class="name"></span> {{ cd.year_published }}
+            </div>
+            <button id="delete" type="button" class="btn mt-auto" title="delete cd"
+              (click)="openDeleteModal(cd.artist)">supprimer</button>
+          </div>
+        </div>
+        <!-- Product actions-->
+        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div>
+  <h3 class="fw-bolder text-center mt-5 mb-5">ajoutez votre CD</h3>
+  <div class="d-grid gap-2 col-6 mx-auto mt-5">
+    <label class="text-center" for="new-cd"> artiste/groupe : </label><br>
+    <input id="new-cd" #artist /><br>
+    <label class="text-center" for="new-cd"> album : </label><br>
+    <input id="new-cd" #album_name /> <br>
+    <label class="text-center" for="new-cd"> année de sortie : </label><br>
+    <input id="new-cd" #year_published /><br>
+  </div>
+  <div class="d-grid gap-2 col-4 mx-auto mt-5">
+    <button id="ajouter" type="button" class="add-button btn btn-outline-dark mb-5" (click)="add(artist.value, album_name.value, year_published.value);
+      artist.value='' ; album_name.value='' ; year_published.value='' ">ajouter</button>
+  </div>
+</div>

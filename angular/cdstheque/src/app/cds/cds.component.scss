@@ -1,0 +1,82 @@
+//variables
+$color-orange : #ff7900;
+$title-font-family : Arial, Helvetica, 75, bold, sans-serif ;
+$text-font-family : Arial, Helvetica, 55, sans-serif ;
+
+
+h3{
+  font-family: $title-font-family;
+  color: $color-orange;
+}
+
+
+
+label{
+  font-family: $text-font-family;
+  color: #000;
+}
+
+#new-cd{
+  font-family: $text-font-family;
+  border:solid, #000, 2px;
+  border-radius: 0%;
+}
+
+#artist{
+  font-family: $title-font-family;
+  color:$color-orange;
+}
+
+#artist:hover{
+  color: #000;
+}
+a{
+  color:$color-orange;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #000;
+}
+
+.card {
+  border:solid, 2px;
+  border-color:#fff;
+  border-radius: 0%;
+    background: #000;
+}
+.card:hover{
+  background: $color-orange;
+}
+
+#details{
+  font-family: $text-font-family;
+  font-size: 15px;
+  color: #fff;
+}
+
+#delete{
+  color:#fff;
+  background: $color-orange;
+  font-family: $text-font-family;
+  border : solid, 2px;
+  border-color: #fff ;
+  border-radius: 0%;
+}
+
+#delete:hover{
+  background:#000;
+  color : #fff
+}
+
+#ajouter{
+  background: $color-orange;
+  font-family: $text-font-family;
+  font-size: 17px;
+  border: solid, #000, 2px;
+  border-radius: 0%;
+}
+
+#ajouter:hover{
+  background: #000;
+  }

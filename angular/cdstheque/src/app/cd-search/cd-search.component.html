@@ -1,0 +1,9 @@
+<div id="search-component">
+  <label class="text-center justify-content-around" for="search-box">Rechercher :</label>
+  <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  <ul class="search-result">
+    <li *ngFor="let cd of cds$ | async">
+      <a routerLink="/detail/{{cd.id}}"> {{ cd.artist}} </a>
+    </li>
+  </ul>
+</div>
